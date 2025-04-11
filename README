@@ -1,0 +1,93 @@
+# 📁 FileDrive
+
+A modern file management web app powered by the latest **Next.js 15 App Router**, **Clerk** for authentication, and **Convex** for backend & state management. Designed with **TailwindCSS** and **ShadCN UI**, featuring form validation, advanced file actions, and a custom toast system.
+
+---
+
+## 🚀 Features
+
+- 🔐 Clerk authentication (sign in, sign up, user management)
+- ⚡ Real-time backend with Convex
+- 📤 File upload & storage
+- 📁 Favorites, Trash, and categorized file views
+- 🔍 File search & filter
+- ✅ Form handling with `react-hook-form` + `zod`
+- 🧾 Beautiful UI with ShadCN + TailwindCSS
+- 🔔 Toast system built using Radix primitives (inspired by `react-hot-toast`)
+
+---
+
+## 🧱 Tech Stack
+
+- **Next.js 15 (App Router)**
+- **Clerk** – authentication & user sessions
+- **Convex** – database + backend logic
+- **TailwindCSS** – utility-first styling
+- **ShadCN UI** – accessible components with Radix under the hood
+- **React Hook Form** + **Zod** – flexible and type-safe forms
+- **Custom toast** system using Radix & `class-variance-authority`
+
+---
+
+## 📦 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/your-username/filedrive.git
+cd filedrive
+pnpm install
+2. Setup environment variables
+Create a .env.local file in the root:
+
+env
+Copy
+Edit
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+CLERK_SECRET_KEY=your_clerk_secret_key
+NEXT_PUBLIC_CONVEX_URL=your_convex_url
+🧠 Replace the values with your actual project keys.
+
+3. Run the development server
+bash
+Copy
+Edit
+pnpm dev
+Now visit http://localhost:3000 in your browser.
+
+🗂️ Project Structure
+bash
+Copy
+Edit
+src/
+├── app/             # App Router pages, layouts, routes
+├── components/
+│   ├── ui/          # ShadCN + Radix based primitives (tabs, toast, etc.)
+├── lib/             # Utility functions (e.g., cn, merge styles)
+├── hooks/           # Custom React hooks
+├── convex/          # Convex backend logic
+└── styles/          # Global styles (if any)
+🧪 Developer Notes
+Toast logic inspired by react-hot-toast with support for variants and dismissal.
+
+Tabs use @radix-ui/react-tabs and are fully stylable.
+
+Uses class-variance-authority and tailwind-merge to control styles.
+
+Only one toast shown at a time (TOAST_LIMIT = 1), customizable in use-toast.ts.
+
+📤 Deployment
+Recommended: Vercel
+
+Make sure to set the environment variables on the Vercel dashboard.
+
+📄 License
+MIT © Your Name or Organization
+
+Built with ❤️ using modern full-stack tools.
+
+vbnet
+Copy
+Edit
+
+Let me know if you want me to generate the `.env.example` file too or prep a demo link badge at the top
